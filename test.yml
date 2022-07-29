@@ -1,0 +1,19 @@
+# settings
+
+#general settings
+name: testyml
+# num_gpu: 1  # set 0 for cpu mode
+manual_seed: 0
+
+generate images:
+  scale: 2  # downsampling scale
+  # img_ori_path: img/HR_example.tif  # root_path + img_ori_path
+  # img_generate_folder: img/generate_folder  # root_path + img_generate_folder
+  # datatype: unint16 # NO NEED
+  # noise: localvar
+  count: 10   # generate 5000 images
+  downsampling method: test # TODO
+
+evaluated model:
+  model_path: models/MSRResNet_x2.pth
+  arch_path: arch/srresnet_arch.py
